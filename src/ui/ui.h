@@ -69,6 +69,7 @@ void ui_event_ScreenChart(lv_event_t * e);
 extern lv_obj_t * ui_ScreenChart;
 extern lv_obj_t * ui_ScreenSettings_Panel2;
 extern lv_obj_t * ui_ScreenChart_Chart1;
+extern lv_obj_t * ui_ScreenChart_LabelV;
 
 void ui_ev_bright(lv_event_t * e);
 void ui_ev_standby(lv_event_t * e);

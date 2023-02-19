@@ -15,7 +15,7 @@ extern "C" {
 #include "ui.h"
 
 void chart_init();
-void chart_add_voltage(const float v);
+float chart_add_voltage(const float v, uint8_t l);
 
 #ifdef __cplusplus
 } /*extern "C"*/

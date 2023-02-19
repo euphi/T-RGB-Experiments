@@ -17,6 +17,12 @@
 TRGBSuppport trgb;
 ui_facade ui;
 
+#include "BLEDevices.h"
+BLEDevices bleDevs;
+
+#include <Battery.h>
+Battery batt = Battery(3000, 4200, BAT_VOLT_PIN);
+
 #include <WiFi.h>
 
 const char* ntpServer = "pool.ntp.org";
@@ -88,6 +94,10 @@ void setup() {
   TRGBSuppport::scan_iic();
 
   trgb.SD_init();
+  batt.begin(3300, 2.0/4.0 * 1.03, &sigmoidal); // divider ratio is 2, but ESP32-S3 has 4096 bit DAC instead of 1024, so an additional division by 4 is needed --> 0.5 ratio  + 3% error correction (individual setting?)
+
+  bleDevs.setup();
+
 
   WiFi.mode(WIFI_MODE_STA);
   WiFi.begin(ssid, password);
@@ -109,15 +119,20 @@ void loop() {
   static uint16_t ani_counter = 0;
 
   static uint16_t speedSim = 200;
+  static uint8_t bat_level = 0;
 
   lv_timer_handler();
+
+  bleDevs.loop();
+
   if (millis() - Millis > 500) {
 	ani_counter++;
 	Millis=millis();
-    float v = trgb.getBatVoltage();
-    Serial.println(v);
-    chart_add_voltage(v);
-	Serial.println((int16_t) (v * 100));
+    //float v = trgb.getBatVoltage();
+    uint16_t v_int = batt.voltage();
+    float v = v_int / 1000.0;
+    uint16_t v_avg = chart_add_voltage(v, bat_level) * 1000;
+    bat_level = batt.level(v_avg);
 
     time_t now;
     time(&now);

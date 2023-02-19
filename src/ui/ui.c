@@ -55,6 +55,7 @@ void ui_event_ScreenChart(lv_event_t * e);
 lv_obj_t * ui_ScreenChart;
 lv_obj_t * ui_ScreenSettings_Panel2;
 lv_obj_t * ui_ScreenChart_Chart1;
+lv_obj_t * ui_ScreenChart_LabelV;
 
 ///////////////////// TEST LVGL SETTINGS ////////////////////
 #if LV_COLOR_DEPTH != 16
@@ -565,6 +566,14 @@ void ui_ScreenChart_screen_init(void)
     lv_obj_set_style_line_width(ui_ScreenChart_Chart1, 5, LV_PART_ITEMS | LV_STATE_DEFAULT);
 
     lv_obj_add_event_cb(ui_ScreenChart, ui_event_ScreenChart, LV_EVENT_ALL, NULL);
+
+    ui_ScreenChart_LabelV = lv_label_create(ui_ScreenChart);
+    lv_obj_set_width(ui_ScreenChart_LabelV, LV_SIZE_CONTENT);   /// 1
+    lv_obj_set_height(ui_ScreenChart_LabelV, LV_SIZE_CONTENT);    /// 1
+    lv_obj_set_x(ui_ScreenChart_LabelV, 0);
+    lv_obj_set_y(ui_ScreenChart_LabelV, lv_pct(25));
+    lv_obj_set_align(ui_ScreenChart_LabelV, LV_ALIGN_CENTER);
+    lv_label_set_text(ui_ScreenChart_LabelV, "xx Volt");
 
 }
 

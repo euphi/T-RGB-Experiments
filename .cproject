@@ -15,7 +15,7 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="first_try" buildProperties="" description="" id="0.910961921" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
+				<configuration artifactName="T-RGB-Experiments" buildProperties="" description="" id="0.910961921" name="Default" parent="org.eclipse.cdt.build.core.prefbase.cfg">
 					<folderInfo id="0.910961921." name="/" resourcePath="">
 						<toolChain id="org.eclipse.cdt.build.core.prefbase.toolchain.952979152" name="No ToolChain" resourceTypeBasedDiscovery="false" superClass="org.eclipse.cdt.build.core.prefbase.toolchain">
 							<targetPlatform binaryParser="org.eclipse.cdt.core.ELF" id="org.eclipse.cdt.build.core.prefbase.toolchain.952979152.52310970" name=""/>
@@ -23,15 +23,17 @@
 							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1409095472" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1624502120" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.239157887" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/include"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/ft3267"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/XL9535"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/TRGBArduinoSupport/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos"/>
@@ -249,7 +251,6 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
 								</option>
@@ -262,8 +263,7 @@
 									<listOptionValue builtIn="false" value="ARDUINO_USB_MODE=1"/>
 									<listOptionValue builtIn="false" value="ARDUINO_USB_CDC_ON_BOOT=1"/>
 									<listOptionValue builtIn="false" value="BOARD_HAS_PSRAM"/>
-									<listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
-									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/TT-RGB/first_try/include/lv_conf.h"/>
+									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/Bike/T-RGB-Experiments/include/lv_conf.h"/>
 									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
 									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
 									<listOptionValue builtIn="false" value="UNITY_INCLUDE_CONFIG_H"/>
@@ -284,15 +284,17 @@
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.54121539" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1096940598" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/include"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/ft3267"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/XL9535"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/TRGBArduinoSupport/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos"/>
@@ -510,7 +512,6 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
 								</option>
@@ -523,8 +524,7 @@
 									<listOptionValue builtIn="false" value="ARDUINO_USB_MODE=1"/>
 									<listOptionValue builtIn="false" value="ARDUINO_USB_CDC_ON_BOOT=1"/>
 									<listOptionValue builtIn="false" value="BOARD_HAS_PSRAM"/>
-									<listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
-									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/TT-RGB/first_try/include/lv_conf.h"/>
+									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/Bike/T-RGB-Experiments/include/lv_conf.h"/>
 									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
 									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
 									<listOptionValue builtIn="false" value="UNITY_INCLUDE_CONFIG_H"/>
@@ -545,15 +545,17 @@
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1310559623" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.41298875" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/include"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/ft3267"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/XL9535"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/TRGBArduinoSupport/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos"/>
@@ -771,7 +773,6 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
 								</option>
@@ -784,8 +785,7 @@
 									<listOptionValue builtIn="false" value="ARDUINO_USB_MODE=1"/>
 									<listOptionValue builtIn="false" value="ARDUINO_USB_CDC_ON_BOOT=1"/>
 									<listOptionValue builtIn="false" value="BOARD_HAS_PSRAM"/>
-									<listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
-									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/TT-RGB/first_try/include/lv_conf.h"/>
+									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/Bike/T-RGB-Experiments/include/lv_conf.h"/>
 									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
 									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
 									<listOptionValue builtIn="false" value="UNITY_INCLUDE_CONFIG_H"/>
@@ -832,15 +832,17 @@
 							<tool id="org.eclipse.cdt.build.core.settings.holder.libs.1855678035" name="holder for library settings" superClass="org.eclipse.cdt.build.core.settings.holder.libs"/>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.30528994" name="Assembly" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.794801023" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" valueType="includePath">
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/include"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/ft3267"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/XL9535"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/TRGBArduinoSupport/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos"/>
@@ -1058,7 +1060,6 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
 								</option>
@@ -1071,8 +1072,7 @@
 									<listOptionValue builtIn="false" value="ARDUINO_USB_MODE=1"/>
 									<listOptionValue builtIn="false" value="ARDUINO_USB_CDC_ON_BOOT=1"/>
 									<listOptionValue builtIn="false" value="BOARD_HAS_PSRAM"/>
-									<listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
-									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/TT-RGB/first_try/include/lv_conf.h"/>
+									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/Bike/T-RGB-Experiments/include/lv_conf.h"/>
 									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
 									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
 									<listOptionValue builtIn="false" value="UNITY_INCLUDE_CONFIG_H"/>
@@ -1093,15 +1093,17 @@
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1146422798" name="GNU C++" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.650084869" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/include"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/ft3267"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/XL9535"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/TRGBArduinoSupport/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos"/>
@@ -1319,7 +1321,6 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
 								</option>
@@ -1332,8 +1333,7 @@
 									<listOptionValue builtIn="false" value="ARDUINO_USB_MODE=1"/>
 									<listOptionValue builtIn="false" value="ARDUINO_USB_CDC_ON_BOOT=1"/>
 									<listOptionValue builtIn="false" value="BOARD_HAS_PSRAM"/>
-									<listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
-									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/TT-RGB/first_try/include/lv_conf.h"/>
+									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/Bike/T-RGB-Experiments/include/lv_conf.h"/>
 									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
 									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
 									<listOptionValue builtIn="false" value="UNITY_INCLUDE_CONFIG_H"/>
@@ -1354,15 +1354,17 @@
 							</tool>
 							<tool id="org.eclipse.cdt.build.core.settings.holder.1637357529" name="GNU C" superClass="org.eclipse.cdt.build.core.settings.holder">
 								<option id="org.eclipse.cdt.build.core.settings.holder.incpaths.1246337321" name="Include Paths" superClass="org.eclipse.cdt.build.core.settings.holder.incpaths" useByScannerDiscovery="false" valueType="includePath">
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/include"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/ft3267"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/lib/XL9535"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/include"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/ESPDateTime/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/TRGBArduinoSupport/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/SD_MMC/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/FS/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
-									<listOptionValue builtIn="false" value="${HOME}/Coding/TT-RGB/first_try/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Wire/src"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl"/>
+									<listOptionValue builtIn="false" value="${HOME}/Coding/Bike/T-RGB-Experiments/.pio/libdeps/esp32-s3-devkitc-1/lvgl/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/newlib/platform_include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/tools/sdk/esp32s3/include/freertos/include/esp_additions/freertos"/>
@@ -1580,7 +1582,6 @@
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/USB/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/Update/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WebServer/src"/>
-									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFi/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiClientSecure/src"/>
 									<listOptionValue builtIn="false" value="${HOME}/.platformio/packages/framework-arduinoespressif32/libraries/WiFiProv/src"/>
 								</option>
@@ -1593,8 +1594,7 @@
 									<listOptionValue builtIn="false" value="ARDUINO_USB_MODE=1"/>
 									<listOptionValue builtIn="false" value="ARDUINO_USB_CDC_ON_BOOT=1"/>
 									<listOptionValue builtIn="false" value="BOARD_HAS_PSRAM"/>
-									<listOptionValue builtIn="false" value="LV_CONF_INCLUDE_SIMPLE"/>
-									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/TT-RGB/first_try/include/lv_conf.h"/>
+									<listOptionValue builtIn="false" value="LV_CONF_PATH=/home/ian/Coding/Bike/T-RGB-Experiments/include/lv_conf.h"/>
 									<listOptionValue builtIn="false" value="HAVE_CONFIG_H"/>
 									<listOptionValue builtIn="false" value="MBEDTLS_CONFIG_FILE=&quot;mbedtls/esp_config.h&quot;"/>
 									<listOptionValue builtIn="false" value="UNITY_INCLUDE_CONFIG_H"/>
@@ -1621,7 +1621,7 @@
 		</cconfiguration>
 	</storageModule>
 	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-		<project id="first_try.null.189551033" name="first_try"/>
+		<project id="T-RGB-Experiments.null.189551033" name="T-RGB-Experiments"/>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>

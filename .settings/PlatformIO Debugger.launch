@@ -19,12 +19,12 @@
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_START_MODE" value="run"/>
 <booleanAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value=""/>
-<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="/home/ian/Coding/TT-RGB/first_try/.pio/build/esp32-s3-devkitc-1/firmware.elf"/>
-<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="first_try"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="/home/ian/Coding/Bike/T-RGB-Experiments/.pio/build/esp32-s3-devkitc-1/firmware.elf"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="T-RGB-Experiments"/>
 <booleanAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_AUTO_ATTR" value="false"/>
 <stringAttribute key="org.eclipse.cdt.launch.PROJECT_BUILD_CONFIG_ID_ATTR" value="0.910961921.1363900502"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
-<listEntry value="/first_try"/>
+<listEntry value="/T-RGB-Experiments"/>
 </listAttribute>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
 <listEntry value="4"/>

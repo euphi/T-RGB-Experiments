@@ -67,4 +67,5 @@ public:
 	void setup();
 	void loop();
 
+	FLClassicParser& getFlparser() {return flparser;}
 };

@@ -45,16 +45,17 @@ void FLClassicParser::updateFromString(const String &flStr) {
 		int16_t int_temp;		// in 1/10°C (or K?)
 		int16_t timeout;
 
-		EFLFlags flags;
+		uint32_t flags;
 		uint32_t hm_total;
 
 		//Forumslader V5 uses $FL5, $FLB and $FLC only
 		switch(flStr.charAt(3)) { //                                                                                                                 Strom in mA? // Verbraucherstrom int. Temp Verbraucher Timeout
 		case '5':  // $FL5,08c800,0,0,4158,4161,4162,-18,0,294,1,233,3679,13231,25897;                        $FL5,08c800,     0,        0,       4158,        4161,        4162,       -18,         0,           294,        1,          233,        3679,             13231,         25897;
-			scanCt = sscanf(flStr.c_str(), "$FL5,%hx,%hhd,%hd,%hd,%hd,%hd,%hd,%hd,%hd,%hhd,%hd,%d,%d,%d\n", &flags, &stufe, &pulses_per_s, &batterie[0],&batterie[1],&batterie[2],&batt_current,&cons_current,&int_temp,&cons_on_off,&timeout,&micropulsecounter,&pulsecounter,&timecounter);
+			scanCt = sscanf(flStr.c_str(), "$FL5,%lx,%hhd,%hd,%hd,%hd,%hd,%hd,%hd,%hd,%hhd,%hd,%d,%d,%d\n", &flags, &stufe, &pulses_per_s, &batterie[0],&batterie[1],&batterie[2],&batt_current,&cons_current,&int_temp,&cons_on_off,&timeout,&micropulsecounter,&pulsecounter,&timecounter);
 			if (scanCt != 14) Serial.println("❌ Not all fields scanned");
 			Serial.printf("[%x] Batteries: %dmV %dmV %dmV\n", scanCt, batterie[0], batterie[1], batterie[2]);
 			Serial.printf("Flags: %x\n", flags);
+			if (stateCB) stateCB(FL_STATE_CONNECTED, flags);
 			speed_f = pulses_per_s * hmh_per_pulse;
 			//FIXME: stats.updateDistance(ceil((pulsecounter * 4096 + micropulsecounter) * m_per_pulse));
 			//FIXME: speed = static_cast<uint16_t>(speed_f);

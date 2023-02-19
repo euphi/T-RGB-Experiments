@@ -66,6 +66,65 @@ void ui_event_ScreenFL(lv_event_t * e)
     }
 }
 
+void updateBool(lv_obj_t* obj, bool b) {
+	if (b) lv_obj_add_state(obj, LV_STATE_CHECKED); else lv_obj_clear_state(obj, LV_STATE_CHECKED);
+
+}
+void ui_ScrFLUpdateFlags(uint32_t flags) {
+	printf("LVLG Update flags: %x\n", flags);
+
+	for (uint8_t f=0; f < FL_FLAG_MAX; f++) {
+		lv_obj_t* cb=0;
+		switch (f) {
+		case FL_FLAG_BALANCE1:
+		case FL_FLAG_BALANCE2:
+		case FL_FLAG_BALANCE3:
+		case FL_FLAG_SHORTCIRCUIT:
+		case FL_FLAG_DISCHARGE_OVR:
+		case FL_FLAG_CHARGE_OVR:
+		case FL_FLAG_DISCHARGE_HGH:
+		case FL_FLAG_CHARGE_HGH:
+			cb = ui_SFLPStateCB4;
+			break;
+		case FL_FLAG_OVPWRRED:
+		case FL_FLAG_OVERLOAD:
+		case FL_FLAG_IN_DUVR:
+		case FL_FLAG_CHARGE_INH:
+			cb = ui_SFLPStateCB4;
+			break;
+		case FL_FLAG_DISCHARGE_INH:
+		case FL_FLAG_FULL_DISCHARGE:
+		case FL_FLAG_CAPACITY_ACC:
+			cb = ui_SFLPStateCB7;
+			break;
+		case FL_FLAG_DISCHARGE:
+			cb = ui_SFLPStateCB8;
+			break;
+		case FL_ERR_CRITICAL:
+			cb = ui_ScreenFLCBError0;
+			break;
+		case FL_ERR_CELL_TEMP_LOW:
+		case FL_ERR_CELL_TEMP_HIGH:
+		case FL_ERR_VOLTAGE_HIGH:
+			cb = ui_ScreenFLCBError3;
+			break;
+		case FL_ERR_VOLTAGE_LOW:
+			cb = ui_ScreenFLCBError4;
+			break;
+
+		case FL_ERR_CHARGE_PROT:
+			cb = ui_ScreenFLCBError5;
+			break;
+		case FL_ERR_CHECKSUM:
+		case FL_ERR_SYSTEM_IRQ:
+			break;
+		// no default:
+		}
+		if (cb) updateBool(cb, flags & (1<<f));
+	}
+
+}
+
 ///////////////////// SCREENS ////////////////////
 void ui_ScreenFL_screen_init(void)
 {
@@ -117,6 +176,7 @@ void ui_ScreenFL_screen_init(void)
     lv_obj_set_y(ui_SFLPStateCB2, lv_pct(-25));
     lv_obj_set_align(ui_SFLPStateCB2, LV_ALIGN_LEFT_MID);
     lv_obj_add_flag(ui_SFLPStateCB2, LV_OBJ_FLAG_SCROLL_ON_FOCUS);     /// Flags
+    lv_obj_clear_flag(ui_SFLPStateCB2, LV_OBJ_FLAG_CLICKABLE);      /// Flags
 
     ui_SFLPStateCB3 = lv_checkbox_create(ui_Screen1_Panel2);
     lv_checkbox_set_text(ui_SFLPStateCB3, "in DUVR");
@@ -430,8 +490,8 @@ void ui_ScreenFL_screen_init(void)
     lv_obj_set_y(ui_ScreenFL_Label6, 0);
     lv_obj_set_x(ui_ScreenFL_Label6, lv_pct(-12));
     lv_obj_set_align(ui_ScreenFL_Label6, LV_ALIGN_CENTER);
-    //lv_obj_set_style_transform_angle(ui_ScreenFL_Label6, 900, 0);
-    lv_label_set_text(ui_ScreenFL_Label6, "Dynamoleistung");
+    lv_obj_set_style_transform_angle(ui_ScreenFL_Label6, 900, 0);
+    lv_label_set_text(ui_ScreenFL_Label6, "Dynamo-W");
 
 
     ui_ScreenFL_Label4 = lv_label_create(ui_ScreenFL);
@@ -441,7 +501,7 @@ void ui_ScreenFL_screen_init(void)
     lv_obj_set_x(ui_ScreenFL_Label4, lv_pct(-2));
     lv_obj_set_align(ui_ScreenFL_Label4, LV_ALIGN_CENTER);
     lv_obj_set_style_transform_angle(ui_ScreenFL_Label4, 900, 0);
-    lv_label_set_text(ui_ScreenFL_Label4, "Verbraucherleistung");
+    lv_label_set_text(ui_ScreenFL_Label4, "Verbraucher-W");
 
 
     ui_ScreenFL_Label3 = lv_label_create(ui_ScreenFL);
@@ -451,7 +511,7 @@ void ui_ScreenFL_screen_init(void)
     lv_obj_set_x(ui_ScreenFL_Label3, lv_pct(8));
     lv_obj_set_align(ui_ScreenFL_Label3, LV_ALIGN_CENTER);
     lv_obj_set_style_transform_angle(ui_ScreenFL_Label3, 900, 0);
-    lv_label_set_text(ui_ScreenFL_Label3, "Batteriestrom");
+    lv_label_set_text(ui_ScreenFL_Label3, "Batterie-A");
 
     lv_obj_add_event_cb(ui_ScreenFL, ui_event_ScreenFL, LV_EVENT_ALL, NULL);
 

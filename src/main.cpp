@@ -20,6 +20,8 @@ ui_facade ui;
 #include "BLEDevices.h"
 BLEDevices bleDevs;
 
+
+
 #include <Battery.h>
 Battery batt = Battery(3000, 4200, BAT_VOLT_PIN);
 
@@ -30,6 +32,7 @@ const char* ssid = "IA216oT";
 const char* password = "SwieSecurity";
 
 #include <DateTime.h>
+
 
 void ui_ev_standby(lv_event_t * e)
 {
@@ -110,6 +113,9 @@ void setup() {
   chart_init();
 
   ui.updateIP("Connecting..");
+
+  // Glue modules together
+  bleDevs.getFlparser().setStateCb([](FLClassicParser::EFLConnState cstate, uint32_t flags) {Serial.printf("FL-FLAGS in main: %x\n", flags);ui_ScrFLUpdateFlags(flags);});
 }
 
 void loop() {

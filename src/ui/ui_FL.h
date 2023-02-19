@@ -5,6 +5,8 @@
 
 #pragma once
 
+#include "FLClassicFlags.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -50,7 +52,7 @@ extern lv_obj_t * ui_ScreenFL_Label3;
 
 
 
-
+void ui_ScrFLUpdateFlags(uint32_t flags);
 
 
 void ui_init_ScrFL(void);
